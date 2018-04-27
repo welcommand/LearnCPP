@@ -27,6 +27,4 @@ namespace cppd {
     };
 }
 
-
-
 #endif /* StringBad_hpp */

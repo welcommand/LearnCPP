@@ -34,10 +34,16 @@ namespace cppd {
     StringBad::~StringBad() {
         std::cout << "\"" << str << "\" object deleted, ";
         --sum_strings;
-        std::cout << sum_strings << "left\n";
+        std::cout << sum_strings << " left\n";
         
         delete [] str;
     }
     
+    std::ostream & operator<< (std::ostream & os, const StringBad & st) {
+        
+        os << st.str << "\n";
+        
+        return os;
+    }
     
 }
