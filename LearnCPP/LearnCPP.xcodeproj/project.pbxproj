@@ -11,6 +11,7 @@
 		2D89F48D2092C6E8007D292E /* bag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D89F48B2092C6E8007D292E /* bag.cpp */; };
 		2D89F4942092C87B007D292E /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D89F4922092C87B007D292E /* node.cpp */; };
 		2D89F49820930111007D292E /* Pseron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D89F49620930111007D292E /* Pseron.cpp */; };
+		2D89F49D20930E1B007D292E /* StringBad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D89F49B20930E1B007D292E /* StringBad.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		2D89F4932092C87B007D292E /* node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
 		2D89F49620930111007D292E /* Pseron.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pseron.cpp; sourceTree = "<group>"; };
 		2D89F49720930111007D292E /* Pseron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pseron.hpp; sourceTree = "<group>"; };
+		2D89F49B20930E1B007D292E /* StringBad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringBad.cpp; sourceTree = "<group>"; };
+		2D89F49C20930E1B007D292E /* StringBad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringBad.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				2D89F49620930111007D292E /* Pseron.cpp */,
 				2D89F49720930111007D292E /* Pseron.hpp */,
+				2D89F49B20930E1B007D292E /* StringBad.cpp */,
+				2D89F49C20930E1B007D292E /* StringBad.hpp */,
 			);
 			path = "C++ Primer Plus demo";
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D89F48D2092C6E8007D292E /* bag.cpp in Sources */,
+				2D89F49D20930E1B007D292E /* StringBad.cpp in Sources */,
 				2D89F4842092C656007D292E /* main.cpp in Sources */,
 				2D89F49820930111007D292E /* Pseron.cpp in Sources */,
 				2D89F4942092C87B007D292E /* node.cpp in Sources */,
