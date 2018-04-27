@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include "bag.hpp"
+
+using namespace wel;
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    bag b;
+    b.add(30);
+    b.add(400);
+    b.add(50);
+    b.add(33);
+    
+    
+    std::cout << b <<std::endl;
+    
     return 0;
 }
