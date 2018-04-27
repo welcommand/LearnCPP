@@ -27,6 +27,7 @@ namespace wel {
         int size() const {return length;};
         
         friend std::ostream & operator<< (std::ostream & os, bag & b);
+        friend bag & operator+= (bag & b, int i);
     };
 }
 

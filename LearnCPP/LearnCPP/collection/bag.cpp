@@ -29,7 +29,12 @@ namespace wel{
         for (node *p = b.begin; p != NULL; p = p->next) {
             os << p->data << "  ";
         }
-        
         return os;
     }
+    
+    bag & operator+= (bag & b, int i) {
+        b.add(i);
+        return b;
+    }
+    
 }

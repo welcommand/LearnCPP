@@ -17,10 +17,9 @@ using namespace cppd;
 int main(int argc, const char * argv[]) {
     
     bag b;
-    b.add(30);
-    b.add(400);
-    b.add(50);
-    b.add(33);
+    for (int i = 0; i < 10; i++) {
+        b += i * 2;
+    }
     std::cout << b <<std::endl;
     
     
