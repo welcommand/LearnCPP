@@ -62,13 +62,11 @@ void stringBadTest() {
         
         StringBad str4 = str3;
         cout << str3 << str4 << endl;
-        
+
         StringBad str5;
         str5 = str1;
-        
+
         cout << str1 << str5 << endl;
-        
-        
     }
     
 }

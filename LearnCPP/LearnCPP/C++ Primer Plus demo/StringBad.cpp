@@ -39,11 +39,30 @@ namespace cppd {
         delete [] str;
     }
     
+    StringBad::StringBad(const StringBad & sb) {
+        len = sb.len;
+        str = new char[len + 1];
+        strcpy(str, sb.str);
+        sum_strings++;
+    }
+    
     std::ostream & operator<< (std::ostream & os, const StringBad & st) {
         
         os << st.str << "\n";
         
         return os;
+    }
+    
+    StringBad & StringBad::operator=(const StringBad & st) {
+        if (&st == this) {
+            return *this;
+        }
+        
+        delete [] str;
+        len = st.len;
+        str = new char[len];
+        strcpy(str, st.str);
+        return *this;
     }
     
 }

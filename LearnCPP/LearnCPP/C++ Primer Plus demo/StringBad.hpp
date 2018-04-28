@@ -21,9 +21,11 @@ namespace cppd {
     public:
         StringBad();
         StringBad(const char *s);
+        StringBad(const StringBad & sb);
         ~StringBad();
         
         friend std::ostream & operator<< (std::ostream & os, const StringBad & st);
+        StringBad & operator=(const StringBad &st);
     };
 }
 
