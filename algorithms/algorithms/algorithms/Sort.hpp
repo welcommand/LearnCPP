@@ -14,7 +14,8 @@
 #include <array>
 
 namespace wel {
-    void selection_sort(std::array<int, 10> l);
+    void selection_sort(std::array<int, 10> & l);
+    void insertion_sort(std::array<int, 10> & l);
 }
 
 #endif /* Sort_hpp */
