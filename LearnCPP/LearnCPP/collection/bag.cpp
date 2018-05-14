@@ -13,10 +13,10 @@ namespace wel{
         
         node *n = new node;
         n->data = item;
-        n->next = NULL;
+        n->next = nullptr;
         
         
-        if (this->begin == NULL) {
+        if (this->begin == nullptr) {
             this->begin = n;
             this->end = n;
         }
@@ -26,7 +26,7 @@ namespace wel{
     }
     
     std::ostream & operator<< (std::ostream & os, bag & b) {
-        for (node *p = b.begin; p != NULL; p = p->next) {
+        for (node *p = b.begin; p != nullptr; p = p->next) {
             os << p->data << "  ";
         }
         return os;

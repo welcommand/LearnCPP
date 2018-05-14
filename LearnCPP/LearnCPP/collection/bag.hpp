@@ -20,10 +20,10 @@ namespace wel {
         int length;
         
     public:
-        bag() {begin = NULL; end = NULL;};
+        bag() {begin = nullptr; end = nullptr;};
         
         void add(int item);
-        bool isEmpty() const {return begin == NULL;};
+        bool isEmpty() const {return begin == nullptr;};
         int size() const {return length;};
         
         friend std::ostream & operator<< (std::ostream & os, bag & b);

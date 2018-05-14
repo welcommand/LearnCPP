@@ -24,6 +24,14 @@ namespace cppd {
         StringBad(const StringBad & sb);
         ~StringBad();
         
+        int length() const {return this->len;};
+        
+        
+        friend bool operator== (const StringBad &s1, const StringBad &s2);
+        friend bool operator> (const StringBad &s1, const StringBad &s2);
+        friend bool operator< (const StringBad &s1, const StringBad &s2);
+        
+        
         friend std::ostream & operator<< (std::ostream & os, const StringBad & st);
         StringBad & operator=(const StringBad &st);
     };

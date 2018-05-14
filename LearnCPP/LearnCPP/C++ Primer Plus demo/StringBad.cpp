@@ -65,4 +65,15 @@ namespace cppd {
         return *this;
     }
     
+    bool operator== (const StringBad &s1, const StringBad &s2) {
+        return strcmp(s1.str, s2.str) == 0;
+    }
+    
+    bool operator> (const StringBad &s1, const StringBad &s2) {
+        return s2 < s1;
+    }
+    
+    bool operator< (const StringBad &s1, const StringBad &s2) {
+        return strcmp(s1.str, s1.str) < 0;
+    }
 }
